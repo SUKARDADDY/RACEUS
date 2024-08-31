@@ -1,0 +1,19 @@
+/* Default styling for desktop and larger screens */
+.image-container {
+	background-color: black;
+	padding: 10px;
+	text-align: center;
+}
+
+
+.image-container img {
+	max-width: 5%;
+	height: auto;
+}
+
+/* Media query for phones (screens narrower than 768px) */
+@media screen and (max-width: 768px) {
+	.image-container img {
+		max-width: 25%;
+	}
+}
