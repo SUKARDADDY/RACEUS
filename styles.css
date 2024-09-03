@@ -1,0 +1,73 @@
+/* Default styling for desktop and larger screens */
+.image-container {
+	background-color: black;
+	padding: 10px;
+	text-align: center;
+}
+
+
+.image-container img {
+	max-width: 5%;
+	height: auto;
+}
+
+body {
+	background-color: black;
+	color: white;
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.top-bar {
+	background-color: black;
+	padding: 10px;
+	text-align: center;
+}
+
+.divider {
+	height: 2px;
+	background-color: white;
+	margin: 0px 0; /* Add some spacing above and below the divider */
+}
+
+.centered-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 80vh;
+}
+
+.centered-image img {
+	max-width: 100%;
+	max-height: 100%;
+	object-fit: contain;;
+}
+
+.button {
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: block; /* Set to block for horizontal centering */
+    font-size: 16px;
+    margin: 0 auto; /* Center horizontally */
+    cursor: pointer;
+    position: absolute; /* Positioning for vertical centering */
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Vertically center */
+}
+.button:hover {
+	traform: scale(1.5);
+}
+
+
+/* Media query for phones (screens narrower than 768px) */
+@media screen and (max-width: 768px) {
+	.image-container img {
+		max-width: 25%;
+	}
+}
